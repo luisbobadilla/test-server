@@ -13,7 +13,7 @@ describe('Controllers', function () {
 
   before('connect websocket', function () {
     io = sailsIOClient(socketIOClient);
-    io.sails.url = 'http://localhost:1337';
+    io.sails.url = '127.0.0.1:1337';
   });
 
   describe('AuthController', function () {
