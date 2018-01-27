@@ -1,0 +1,35 @@
+{
+  "name": "test",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "include-all": "^1.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "jwt-policy": "^0.7.0",
+    "lodash": "^4.17.4",
+    "rc": "1.0.1",
+    "sails": "~0.12.13",
+    "sails-mongo": "^0.12.2"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "test": "./node_modules/mocha/bin/mocha test/bootstrap.test.js test/integration/**/*.test.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joshuamarquezn/test.git"
+  },
+  "author": "joshuamarquezn",
+  "license": "",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "sails.io.js": "^1.1.13",
+    "socket.io-client": "^2.0.4",
+    "supertest": "^3.0.0"
+  }
+}
