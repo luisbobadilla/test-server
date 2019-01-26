@@ -56,8 +56,13 @@ try {
 }
 
 sails.on('hook:orm:loaded', async function () {
+  console.log(1)
   await User.destroy({ username: "test" });
   await User.create({ username: "test", password: "password" });
+  await User.destroy({ username: "javier" });
+  await User.create({ username: "javier", password: "javier123" });
+  await User.destroy({ username: "mariel" });
+  await User.create({ username: "mariel", password: "mariel123" });
 });
 // Start server
 sails.lift(rc('sails'));
